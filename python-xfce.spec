@@ -32,7 +32,7 @@ Python bindings for the Xfce environment.
 %makeinstall_std
 
 # strip $RPM_BUILD_ROOT from libs
-sed -i s/%{buildroot}/""/g ${RPM_BUILD_ROOT}%{py_sitedir}/xfce4/*
+sed -i s%%{buildroot}%""%g %{buildroot}%{py_sitedir}/xfce4/*
 
 %clean
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
@@ -41,7 +41,7 @@ sed -i s/%{buildroot}/""/g ${RPM_BUILD_ROOT}%{py_sitedir}/xfce4/*
 %defattr(-,root,root)
 %doc AUTHORS COPYING ChangeLog README TODO
 %{_libdir}/pkgconfig/pyxfce-1.0.pc
-%{_libdir}/python%{py_ver}/site-packages/xfce4/*.py*
-%{_libdir}/python%{py_ver}/site-packages/xfce4/*.la
-%{_libdir}/python%{py_ver}/site-packages/xfce4/*.so
+%{py_sitedir}/xfce4/*.py*
+%{py_sitedir}/xfce4/*.la
+%{py_sitedir}/xfce4/*.so
 %{_datadir}/%{oname}/4.2/defs/*.defs
