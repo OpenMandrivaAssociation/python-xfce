@@ -3,7 +3,7 @@
 Summary:	Python bindings for Xfce
 Name:		python-xfce
 Version:	4.4.0
-Release:	%mkrel 2
+Release:	%mkrel 3
 License:	GPL
 Group:		Development/Python
 Url:		http://pyxfce.xfce.org
@@ -30,6 +30,9 @@ Python bindings for the Xfce environment.
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
 
 %makeinstall_std
+
+# strip $RPM_BUILD_ROOT from libs
+sed -i s/%{buildroot}/""/g ${RPM_BUILD_ROOT}%{py_sitedir}/xfce4/*
 
 %clean
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
