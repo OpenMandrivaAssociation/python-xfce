@@ -3,7 +3,7 @@
 Summary:	Python bindings for Xfce
 Name:		python-xfce
 Version:	4.4.0
-Release:	%mkrel 3
+Release:	%mkrel 4
 License:	GPL
 Group:		Development/Python
 Url:		http://pyxfce.xfce.org
