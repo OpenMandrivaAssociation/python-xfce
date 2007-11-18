@@ -3,8 +3,8 @@
 Summary:	Python bindings for Xfce
 Name:		python-xfce
 Version:	4.4.0
-Release:	%mkrel 4
-License:	GPL
+Release:	%mkrel 5
+License:	BSD
 Group:		Development/Python
 Url:		http://pyxfce.xfce.org
 Source0:	http://pyxfce.xfce.org/%{oname}-%{version}.tar.bz2
@@ -39,7 +39,7 @@ sed -i s%%{buildroot}%""%g %{buildroot}%{py_platsitedir}/xfce4/*
 
 %files
 %defattr(-,root,root)
-%doc AUTHORS COPYING ChangeLog README TODO
+%doc AUTHORS ChangeLog README TODO
 %{_libdir}/pkgconfig/pyxfce-1.0.pc
 %{py_platsitedir}/xfce4/*.py*
 %{py_platsitedir}/xfce4/*.la
