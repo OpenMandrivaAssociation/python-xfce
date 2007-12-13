@@ -3,19 +3,20 @@
 Summary:	Python bindings for Xfce
 Name:		python-xfce
 Version:	4.4.0
-Release:	%mkrel 5
+Release:	%mkrel 6
 License:	BSD
 Group:		Development/Python
 Url:		http://pyxfce.xfce.org
 Source0:	http://pyxfce.xfce.org/%{oname}-%{version}.tar.bz2
-BuildRequires:	libxfce4util-devel >= 4.4.0
+BuildRequires:	libxfce4util-devel >= 4.4.2
 BuildRequires:	libxfcegui4-devel
 BuildRequires:	libxfce4mcs-devel
+BuildRequires:	libxfce4panel-devel
 BuildRequires:	pygtk2.0-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
-Python bindings for the Xfce environment.
+Python bindings for the Xfce desktop environment.
 
 %prep
 %setup -qn %{oname}-%{version}
