@@ -11,7 +11,7 @@ Source0:	http://pyxfce.xfce.org/%{oname}-%{version}.tar.bz2
 BuildRequires:	libxfce4util-devel >= 4.4.2
 BuildRequires:	libxfcegui4-devel
 BuildRequires:	libxfce4mcs-devel
-BuildRequires:	libxfce4panel-devel
+BuildRequires:	libxfce4-panel-devel
 BuildRequires:	pygtk2.0-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
