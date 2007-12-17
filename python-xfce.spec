@@ -13,7 +13,6 @@ BuildRequires:	libxfcegui4-devel
 BuildRequires:	libxfce4mcs-devel
 BuildRequires:	libxfce4-panel-devel
 BuildRequires:	pygtk2.0-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 Python bindings for the Xfce desktop environment.
