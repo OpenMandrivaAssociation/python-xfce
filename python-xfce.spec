@@ -1,16 +1,16 @@
 %define oname pyxfce
+%define snap 29680
 
 Summary:	Python bindings for Xfce
 Name:		python-xfce
-Version:	4.4.0
-Release:	%mkrel 10
+Version:	4.4.1
+Release:	%mkrel -c %{snap} 1
 License:	BSD
 Group:		Development/Python
 Url:		http://pyxfce.xfce.org
-Source0:	http://pyxfce.xfce.org/%{oname}-%{version}.tar.bz2
+Source0:	http://pyxfce.xfce.org/%{oname}-%{version}-svn%{snap}.tar.bz2
 BuildRequires:	libxfce4util-devel >= 4.4.2
 BuildRequires:	libxfcegui4-devel
-BuildRequires:	libxfce4mcs-devel
 BuildRequires:	libxfce4-panel-devel
 BuildRequires:	pygtk2.0-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
@@ -22,6 +22,7 @@ Python bindings for the Xfce desktop environment.
 %setup -qn %{oname}-%{version}
 
 %build
+xdt-autogen
 %configure2_5x \
 	--enable-final
 
