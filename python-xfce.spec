@@ -8,7 +8,7 @@ Version:	4.4.1
 Release:	%mkrel -c %{snap} 4
 License:	BSD
 Group:		Development/Python
-Url:		http://pyxfce.xfce.org
+Url:		https://pyxfce.xfce.org
 Source0:	http://pyxfce.xfce.org/%{oname}-%{version}-svn%{snap}.tar.bz2
 BuildRequires:	libxfce4util-devel >= 4.4.2
 BuildRequires:	libxfcegui4-devel
