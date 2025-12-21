@@ -10,6 +10,11 @@ License:	BSD
 Group:		Development/Python
 Url:		https://pyxfce.xfce.org
 Source0:	http://pyxfce.xfce.org/%{oname}-%{version}-svn%{snap}.tar.bz2
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	libxfce4util-devel >= 4.4.2
 BuildRequires:	libxfcegui4-devel
 BuildRequires:	libxfce4-panel-devel
