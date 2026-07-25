@@ -5,7 +5,7 @@
 Summary:	Python bindings for Xfce
 Name:		python-xfce
 Version:	4.4.1
-Release:	%mkrel -c %{snap} 4
+Release:	-c %{snap} 4.1
 License:	BSD
 Group:		Development/Python
 Url:		https://pyxfce.xfce.org
